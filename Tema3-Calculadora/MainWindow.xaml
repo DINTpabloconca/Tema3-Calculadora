@@ -8,11 +8,11 @@
         Title="MainWindow" Height="500" Width="450">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -20,17 +20,53 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Viewbox Grid.ColumnSpan="3" Grid.Row="0" HorizontalAlignment="Right">
-            <TextBox IsReadOnly="True" TextAlignment="Right" x:Name="resultadoTextBox" Grid.Row="0" FontSize="50" Grid.Column="0" Grid.ColumnSpan="3"></TextBox>
+            <TextBox IsReadOnly="True" TextAlignment="Right" x:Name="resultadoTextBox" FontSize="50"></TextBox>
         </Viewbox>
-        <Button Tag="1" Grid.Row="1" Grid.Column="0" Content="1" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="2" Grid.Row="1" Grid.Column="1" Content="2" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="3" Grid.Row="1" Grid.Column="2" Content="3" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="4" Grid.Row="2" Grid.Column="0" Content="4" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="5" Grid.Row="2" Grid.Column="1" Content="5" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="6" Grid.Row="2" Grid.Column="2" Content="6" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="7" Grid.Row="3" Grid.Column="0" Content="7" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="8" Grid.Row="3" Grid.Column="1" Content="8" FontSize="40" Click="Button_Click"></Button>
-        <Button Tag="9" Grid.Row="3" Grid.Column="2" Content="9" FontSize="40" Click="Button_Click"></Button>
+        <Button Tag="1" Grid.Row="1" Grid.Column="0" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="1"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="2" Grid.Row="1" Grid.Column="1" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="2"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="3" Grid.Row="1" Grid.Column="2" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="3"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="4" Grid.Row="2" Grid.Column="0" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="4"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="5" Grid.Row="2" Grid.Column="1" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="5"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="6" Grid.Row="2" Grid.Column="2" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="6"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="7" Grid.Row="3" Grid.Column="0" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="7"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="8" Grid.Row="3" Grid.Column="1" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="8"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Tag="9" Grid.Row="3" Grid.Column="2" Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="9"></TextBlock>
+            </Viewbox>
+        </Button>
         <Button Tag="0" Grid.Row="4" Grid.Column="0" Content="0" Grid.ColumnSpan="3" FontSize="40" Click="Button_Click"></Button>
     </Grid>
 </Window>
