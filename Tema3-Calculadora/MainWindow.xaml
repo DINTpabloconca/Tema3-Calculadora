@@ -6,6 +6,19 @@
         xmlns:local="clr-namespace:Tema3_Calculadora"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="450">
+    <Window.Resources>
+        <Style TargetType="{x:Type Viewbox}">
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="IsReadOnly" Value="True"></Setter>
+            <Setter Property="TextAlignment" Value="Right"></Setter>
+            <Setter Property="FontSize" Value="50"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <EventSetter Event="Click" Handler="Button_Click"></EventSetter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
@@ -19,54 +32,54 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Viewbox Grid.ColumnSpan="3" Grid.Row="0" HorizontalAlignment="Right">
-            <TextBox IsReadOnly="True" TextAlignment="Right" x:Name="resultadoTextBox" FontSize="50"></TextBox>
+        <Viewbox Grid.ColumnSpan="3" Grid.Row="0">
+            <TextBox x:Name="resultadoTextBox"></TextBox>
         </Viewbox>
-        <Button Tag="1" Grid.Row="1" Grid.Column="0" Click="Button_Click">
+        <Button Tag="1" Grid.Row="1" Grid.Column="0">
             <Viewbox>
                 <TextBlock Text="1"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="2" Grid.Row="1" Grid.Column="1" Click="Button_Click">
+        <Button Tag="2" Grid.Row="1" Grid.Column="1">
             <Viewbox>
                 <TextBlock Text="2"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="3" Grid.Row="1" Grid.Column="2" Click="Button_Click">
+        <Button Tag="3" Grid.Row="1" Grid.Column="2">
             <Viewbox>
                 <TextBlock Text="3"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="4" Grid.Row="2" Grid.Column="0" Click="Button_Click">
+        <Button Tag="4" Grid.Row="2" Grid.Column="0">
             <Viewbox>
                 <TextBlock Text="4"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="5" Grid.Row="2" Grid.Column="1" Click="Button_Click">
+        <Button Tag="5" Grid.Row="2" Grid.Column="1">
             <Viewbox>
                 <TextBlock Text="5"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="6" Grid.Row="2" Grid.Column="2" Click="Button_Click">
+        <Button Tag="6" Grid.Row="2" Grid.Column="2">
             <Viewbox>
                 <TextBlock Text="6"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="7" Grid.Row="3" Grid.Column="0" Click="Button_Click">
+        <Button Tag="7" Grid.Row="3" Grid.Column="0">
             <Viewbox>
                 <TextBlock Text="7"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="8" Grid.Row="3" Grid.Column="1" Click="Button_Click">
+        <Button Tag="8" Grid.Row="3" Grid.Column="1">
             <Viewbox>
                 <TextBlock Text="8"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="9" Grid.Row="3" Grid.Column="2" Click="Button_Click">
+        <Button Tag="9" Grid.Row="3" Grid.Column="2">
             <Viewbox>
                 <TextBlock Text="9"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Tag="0" Grid.Row="4" Grid.Column="0" Content="0" Grid.ColumnSpan="3" FontSize="40" Click="Button_Click"></Button>
+        <Button Tag="0" Grid.Row="4" Grid.Column="0" Content="0" Grid.ColumnSpan="3" FontSize="40"></Button>
     </Grid>
 </Window>

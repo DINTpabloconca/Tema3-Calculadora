@@ -30,5 +30,10 @@ namespace Tema3_Calculadora
             String boton = (sender as Button).Tag.ToString();
             resultadoTextBox.Text = String.Concat(resultadoTextBox.Text,boton);
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
